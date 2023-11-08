@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+.navber{
+    width: 100vw;
+    height: 20vh;
+    /* background-color: aliceblue; */
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    cursor: pointer;
+}
+.navber h1{
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+a{
+   margin: 0px 10px;
+   text-decoration: none;
+   color: #fff;
+   cursor: pointer;
+}
+a:hover{
+    border-bottom: 2px solid #fff;
+}
+.navber span{
+    color: yellow;
+}
+.rnavber button{
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid yellow;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.container{
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    /* background-color: blue; */
+}
+.left{
+    width: 50vw;
+    height: 60vh;
+    background:url(/image.png\ \(2\).png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.center{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-30%,-30%);
+}
+.right{
+    position: relative;
+   width: 50vw;
+   height: 100vh;
+   /* background-color: yellow; */
+}
+
+h3{
+    font-size: 30px;
+    color: #fff;
+}
+.right span{
+    color: red;
+}
+p{
+    font-size: 14px;
+    font-weight: 500;
+    opacity: .6;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+.center button{
+    padding: 10px 20px;
+    margin: 20px;
+    position: absolute;
+   right: 20px;
+   color: #000;
+   background-color: yellow;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   border-radius: 40px;
+   font-size: 15px;
+   font-weight: 500;
+}
+.center button:hover{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid yellow;
+    font-weight: 500;
+}
+@media (max-width:600px) {
+  .main{
+      width: 100vh;
+      flex-direction: column;
+  }
+  .main .navber{
+      width: 50vw;
+  }
+  .main .left{
+      width: 100vw;
+      flex-direction: column;
+      width: 70px;
+  }
+}
